@@ -5,7 +5,7 @@ import math
 #input your conversion
 Number = float(input("How much: "))
 print("reference")
-ref = str(" c = celsius f = fahrenheit k = kelvin \n "
+ref = str(" c = celsius f = fahrenheit k = kelvin r = rankine \n "
           " m = meters m2 = square meters m3 = cubic meters \n mi = miles \n ft = feet \n yd = yards ")
 #asking for a reference won't move onto the next step
 while ref:
@@ -45,6 +45,8 @@ elif Convert1 == "k":
         print("This is: ", Number - K, " celsius")
     elif Convert2 == 'f':
         print()
+#elif Convert1 == 'r':
+
 
 #conversions for meters
 if Convert1 == "m":
@@ -73,6 +75,10 @@ if Convert1 == "m":
         op2 = float(input("Enter second operator: ", ))
         op3 = float(input("Enter third operator: ", ))
         print("This is: ", Number * op2 * op3, "cubic meters")
+    else:
+        print("invalid")
+
+
 
 #I want this to do dimentianal analysis
 #converts cubic meters to varius mesures of volume, mass, and weight
@@ -80,7 +86,7 @@ if Convert1 == "m3":
     g = 1000000
     kg = 1000
     if Convert2 == "g":
-        print("This is: ", Number * 1000000, "grams per cubic meter")
+        print("This is: ", Number * g, "grams per cubic meter")
     elif Convert2 == "kg":
         print("This is: ", Number * kg, "kilograms per cubic meter")
 
